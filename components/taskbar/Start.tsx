@@ -8,7 +8,12 @@ import logo from "../../media/icons/windows-logo.png";
 const Start: React.FC<Props> = () => {
   return (
     <div className="bg-green-500 w-11 rounded-r-lg  ">
-      <Image src={logo} className="object-contain" layout="responsive" />
+      <Image
+        src={logo}
+        alt="start"
+        className="object-contain"
+        layout="responsive"
+      />
     </div>
   );
 };

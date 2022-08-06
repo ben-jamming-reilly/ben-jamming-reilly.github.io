@@ -9,7 +9,7 @@ interface Props {
 const Layer: React.FC<Props> = ({ distance, media }) => {
   return (
     <>
-      <Image className="w-full object-fill" src={media} />
+      <Image className="w-full object-fill" alt='layer' src={media} />
     </>
   );
 };

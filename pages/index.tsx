@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
-// import me from "../public/static/output-onlinepngtools.png";
 
 import Draggable, { DraggableData, DraggableEvent } from "react-draggable";
 
@@ -12,8 +10,6 @@ type DraggableEventHandler = (
 
 const Home: NextPage = () => {
   const eventLogger = (e: DraggableEvent, data: Object) => {
-    // console.log("Event: ", e);
-    // console.log("Data: ", data);
   };
 
   return (
@@ -30,7 +26,7 @@ const Home: NextPage = () => {
               alt="me"
               height={1100 / 2}
               width={825 / 2}
-            ></Image>
+            />
           </div>
         </button>
       </Draggable>
