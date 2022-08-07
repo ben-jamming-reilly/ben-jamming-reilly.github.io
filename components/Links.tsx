@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 import Draggable, { DraggableData, DraggableEvent } from "react-draggable";
 
 type DraggableEventHandler = (
@@ -15,7 +16,40 @@ export const Links: React.FC<props> = () => {
       onStart={(e, data) => eventLogger(e, data)}
       onDrag={(e, data) => eventLogger(e, data)}
     >
-      <div>aasdf</div>
+      <div className="rounded-full w-60 h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500 flex flex-row justify-around items-center">
+        <a href="/">
+          <Image
+            src="/icons/discord.svg"
+            draggable={false}
+            height={30}
+            width={30}
+          />
+        </a>
+        <a href="https://github.com/ben-jamming-reilly">
+          <Image
+            src="/icons/github.svg"
+            draggable={false}
+            height={30}
+            width={30}
+          />
+        </a>
+        <a href="https://www.instagram.com/benjamin_really/">
+          <Image
+            src="/icons/instagram.svg"
+            draggable={false}
+            height={30}
+            width={30}
+          />
+        </a>
+        <a href="https://twitter.com/benjamin_really">
+          <Image
+            src="/icons/twitter.svg"
+            draggable={false}
+            height={30}
+            width={30}
+          />
+        </a>
+      </div>
     </Draggable>
   );
 };
