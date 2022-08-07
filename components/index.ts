@@ -1,5 +1,3 @@
-import Taskbar from "./taskbar/Taskbar";
-import Background from "./background/Background";
-import Desktop from "./desktop/Desktop";
+import { Links } from "./Links";
 
-export { Taskbar, Background, Desktop };
+export { Links };
