@@ -17,8 +17,9 @@ export const Links: React.FC<props> = () => {
       onDrag={(e, data) => eventLogger(e, data)}
     >
       <div className="rounded-full w-60 h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500 flex flex-row justify-around items-center">
-        <a href="/">
+        <a href="https://discordapp.com/users/555243102718263298">
           <Image
+            alt="social"
             src="/icons/discord.svg"
             draggable={false}
             height={30}
@@ -27,6 +28,7 @@ export const Links: React.FC<props> = () => {
         </a>
         <a href="https://github.com/ben-jamming-reilly">
           <Image
+            alt="social"
             src="/icons/github.svg"
             draggable={false}
             height={30}
@@ -35,6 +37,7 @@ export const Links: React.FC<props> = () => {
         </a>
         <a href="https://www.instagram.com/benjamin_really/">
           <Image
+            alt="social"
             src="/icons/instagram.svg"
             draggable={false}
             height={30}
@@ -43,6 +46,7 @@ export const Links: React.FC<props> = () => {
         </a>
         <a href="https://twitter.com/benjamin_really">
           <Image
+            alt="social"
             src="/icons/twitter.svg"
             draggable={false}
             height={30}
