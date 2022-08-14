@@ -15,6 +15,7 @@ export const Links: React.FC<props> = () => {
     <Draggable
       onStart={(e, data) => eventLogger(e, data)}
       onDrag={(e, data) => eventLogger(e, data)}
+      cancel="a"
     >
       <div className="rounded-full w-60 h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500 flex flex-row justify-around items-center">
         <a href="https://discordapp.com/users/555243102718263298">
