@@ -1,19 +1,19 @@
-import * as React from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
-const useIsMobile = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const handleWindowChange = () => {
-    setWidth(window.innerWidth);
-  };
+// const useIsMobile = () => {
+//   const [width, setWidth] = useState();
+//   const handleWindowChange = () => {
+//     setWidth(window.innerWidth);
+//   };
 
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowChange);
-    };
-  }, []);
+//   useEffect(() => {
+//     window.addEventListener("resize", handleWindowChange);
+//     return () => {
+//       window.removeEventListener("resize", handleWindowChange);
+//     };
+//   }, []);
 
-  return width <= 800;
-};
+//   return width <= 800;
+// };
 
-export default useIsMobile;
+// export default useIsMobile;

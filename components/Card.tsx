@@ -15,12 +15,13 @@ type DraggableEventHandler = (
 
 export const Card: React.FC<props> = ({ src, height, width }) => {
   const eventLogger = (e: DraggableEvent, data: Object) => {};
+
   return (
     <Draggable
       onStart={(e, data) => eventLogger(e, data)}
       onDrag={(e, data) => eventLogger(e, data)}
     >
-      <button className="drop-shadow-lg ">
+      <button className="">
         <Image
           className="rounded-lg bg-violet-900"
           src={src}
